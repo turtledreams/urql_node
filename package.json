@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "tsc -w",
+    "start": "node dist/index.js",
+    "dev": "nodemon dist/index.js",
+    "start2": "ts-node src/index.ts",
+    "dev2": "nodemon --exec ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/turtledreams/urql_node/issues"
   },
-  "homepage": "https://github.com/turtledreams/urql_node#readme"
+  "homepage": "https://github.com/turtledreams/urql_node#readme",
+  "devDependencies": {
+    "@types/node": "^16.7.2",
+    "nodemon": "^2.0.12",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "^4.5.9",
+    "@mikro-orm/core": "^4.5.9",
+    "@mikro-orm/migrations": "^4.5.9",
+    "@mikro-orm/postgresql": "^4.5.9",
+    "pg": "^8.7.1",
+    "ts-node": "^10.2.1"
+  }
 }
