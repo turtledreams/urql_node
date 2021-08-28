@@ -1,2 +1,1 @@
-console.log('Hi');
-console.log('Ho');
+console.log('urql');
